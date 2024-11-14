@@ -30,5 +30,6 @@ public class Users {
     @OneToMany(mappedBy = "users")
     List<Message> messages;
 
-
+    @ManyToMany
+    List<Roles> roles;
 }
